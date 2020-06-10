@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="galerie de miho">
+<meta name="viewport" content="width=device-width">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+<!--タブに表示されるタイトル-->
+<title>galerie de miho</title>
+
+<!--CSSの読み込み先(href)-->
+<link rel="stylesheet" media="all" href="style-mihos.css">
+
+
+</head>
+
+<body>
+<!--メニューバー-->
+<nav id="mainnav">
+	<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+	<div class="bottons">
+		<ul>
+			<li><a class="panel" href="#header">TOP</a></li>
+			<li><a class="panel" href="#">ポートフォリオ</a></li>
+			<li><a class="panel" href="#">ギャラリー</a></li>
+			<li><a class="panel" href="https://www.instagram.com/art_de_miho/"><span class="fab fa-instagram"></span>instagram</a></li>
+			
+		</ul>
+	</div>
+</nav>
+	
+
+<div id="semibody">
+<header id="header">
+
+	<h1>art de miho</h1>
+		<h2>島村美宝のアートギャラリー</h2>
+		
+
+</header>
+
+<section id="sec01">
+	<div class="imageplate">
+
+
+	
+		
+		
+	</div>
+	<!--div id ="top btn">
+		<a href= "#" class ="gotolibrary">作品を見る</a>
+	</div-->
+	
+
+
+
+<!-- UTinderとは -->
+
+	<div class="first container">
+	<h2>Who am I?</h2>
+	
+	 
+	　　<p>文章</p>
+	<div class="imageplateB">
+
+	</div>
+		
+	 <h2>タイトル2</h2>
+	    <p>文章</p>
+	
+	</div>
+
+
+</section>
+
+<!-- // UTInderを始める -->
+<section id="sec02">
+	<div class="second container">
+	 <h2>二つ目のセクション</h2>
+	
+
+	</div>
+</section>
+
+</div>
+<!--フッタ―---------------->
+<section id="footer">
+	<div class="footer">
+	   
+		<a href="#header">トップへ戻る</a>
+	   <h2>art de miho</h2>
+	   <p></p>
+	   <a href="#" class="ask">ご依頼はこちらから</a>
+	   <a href="#" class="port">ポートフォリオ</a>
+	   <a href="#" class="ブログ">ブログ</a>
+	   
+	   
+   </div>
+
+ 
+ 
+ </section>
+	
+</body>
+<script>
+	'use strict'
+
+	function hamburger() {
+　　document.getElementById('line1').classList.toggle('linea');
+　　document.getElementById('line2').classList.toggle('lineb');
+　　document.getElementById('line3').classList.toggle('linec');
+　　document.getElementById('target').classList.toggle('slidex');
+　　document.getElementById('nav_f').classList.toggle('fadein');
+}
+
+document.getElementById('target').addEventListener('click', function () {
+　　hamburger();
+});
+
+let list = document.getElementsByClassName('list');
+
+for (let i = 0; i < list.length; i++) {
+　　list[i].addEventListener('click', function () {
+　　　　hamburger();
+    });
+}
+</script>
+</html>
